@@ -1,0 +1,20 @@
+{
+  "name": "jasmine-standalone-3.5.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node node_modules/jasmine/bin/jasmine.js  --config=spec/support/jasmine.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.5.0",
+    "jasmine-node": "^3.0.0"
+  },
+  "dependencies": {}
+}
