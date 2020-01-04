@@ -2,6 +2,10 @@ const MergeSort = require('../src/MergeSort');
 
 describe("MergeSort", function() {
   var result;
+  it("MergeSort algoritmasıyla verilen arrayin küçükten büyüğe doğru dizilimi", function () {
+    result = MergeSort.getResult([111]);
+    expect(result).toEqual([111]);
+  });
     it("MergeSort algoritmasıyla verilen array'in küçükten büyüğe doğru dizilimi", function() {
       result = MergeSort.getResult([5,4,8,2,8]);
       expect(result).toEqual([2,4,5,8,8]);
@@ -10,6 +14,16 @@ describe("MergeSort", function() {
     it("Daha komplex bir arrayin merge algoritmasıyla düzenlenmesi", function() {
       result = MergeSort.getResult([34,23,23,1,2,46,6,7,98,65,5,4,3,45,41,89,76,3,4,5,72]);
       expect(result).toEqual([1, 2, 3, 3, 4, 4, 5, 5, 6, 7, 23, 23, 34, 41, 45, 46, 65, 72, 76, 89, 98]);
+    });
+
+    it("Daha komplex bir arrayin merge algoritmasıyla düzenlenmesi", function () {
+      result = MergeSort.getResult([-1, 0, -5, -9, -7]);
+      expect(result).toEqual([-9, -7, -5, -1, 0]);
+    });
+
+    it("Daha komplex bir arrayin merge algoritmasıyla düzenlenmesi", function () {
+      result = MergeSort.getResult([-1, 0, -5, -9, -7, 1, 8, 5, 9, 7]);
+      expect(result).toEqual([-9, -7, -5, -1, 0, 1, 5, 7, 8, 9]);
     });
     
     it("Daha komplex bir arrayin merge algoritmasıyla düzenlenmesi", function() {
